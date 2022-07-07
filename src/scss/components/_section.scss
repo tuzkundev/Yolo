@@ -1,0 +1,17 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../breakpoint" as *;
+
+.section {
+  margin-bottom: 80px;
+
+  & > * ~ * {
+    margin-top: 70px;
+  }
+
+  &__title {
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+  }
+}
